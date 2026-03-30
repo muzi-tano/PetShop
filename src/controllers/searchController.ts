@@ -9,7 +9,7 @@ export const search = (req: Request, res: Response) => {
   }
   res.send('search');
   let list = pet.getFromName(query);
-  res.render('pages/pages', {
+  res.render('pages/page', {
     menu: createMenuObject(''),
     list,
     query
